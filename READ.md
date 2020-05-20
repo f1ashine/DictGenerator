@@ -4,7 +4,7 @@
 ## 0x01 简介
 本工具基于`.Net Framework4.0`编写，工具运行后会在exe路径下生成`config.json`作为配置文件，思路参考[BaiLu-SED-Tool](https://github.com/HongLuDianXue/BaiLu-SED-Tool)，点击`生成字典`按钮在exe路径下生成`password.txt`文件。  
 工具截图如下：  
-![UI](https://github.com/f1ashine/DictGenerator/Doc/ui.png)
+![UI](https://github.com/f1ashine/DictGenerator/img/ui.png)
 ## 0x02 说明
 字典组合方式分为3类：`信息类A`、`符号类B`、`常用字符类C`
 1. A类字符  
@@ -25,7 +25,7 @@
 2. B类字符  
 B类字符主要是符号，程序设计了两种选择，一种是程序自动生成符号组合，一种是配置文件`config.json`配置。  
 符号组合如下图所示：  
-![SymbolCombine](https://github.com/f1ashine/DictGenerator/Doc/symbols.png)  
+![SymbolCombine](https://github.com/f1ashine/DictGenerator/img/symbols.png)  
 通过设置`最大组合个数`来限制程序生成的符号数量，默认最大3种符号
 
 3. C类字符  
@@ -35,7 +35,7 @@ B类字符主要是符号，程序设计了两种选择，一种是程序自动�
 1. 考虑到用户在修改组合方式后，想下次接着使用该规则，因此设计了`保存配置`，便于即时保存用户自定义的字典组合方式
 
 2. 考虑到配置文件`config.json`采用了json格式，在修改配置时可能难于复制粘贴，因此设计了`txt文件转json格式`按钮，便于通过打开一个txt字典文件，处理后显示在界面中：  
-![txt2json](https://github.com/f1ashine/DictGenerator/Doc/txt2json.png)
+![txt2json](https://github.com/f1ashine/DictGenerator/img/txt2json.png)
 
 3. 考虑到可能需要将生成的字典与其他字典合并的情况，设计了追加字典的功能，对于追加的字典进行了去重，生成的字典未另外设置去重。
 
