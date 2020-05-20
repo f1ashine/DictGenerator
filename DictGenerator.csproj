@@ -125,7 +125,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="READ.md" />
+    <None Include="README.md" />
     <None Include="Resources\config.json" />
   </ItemGroup>
   <ItemGroup>
