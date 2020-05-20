@@ -115,8 +115,7 @@ namespace DictGenerator
                     if(name.Length > 1) 
                     { 
                         this.AListGroup[this.nameLab].Add(Tool.mergeArray(name));
-                        this.AListGroup[this.nameLab].Add(Tool.toFirstUpperArray(name));
-                        this.AListGroup[this.nameLab].Add(Tool.getAbbreviationArrrray(name));
+                        this.AListGroup[this.nameLab].AddRange(Tool.getNameList(name));
                     }
                     else if(name.Length == 1)
                     {
@@ -151,7 +150,13 @@ namespace DictGenerator
                     else
                     {
                         int top = Convert.ToInt32(topYear.Text);
-                        for (int i = Convert.ToInt32(botYear.Text); i <= top; i++)
+                        int bot = Convert.ToInt32(botYear.Text);
+                        if (bot < top)
+                        {
+                            MessageBox.Show("年份输入错误！");
+                            return false;
+                        }
+                        for (int i = bot; i <= top; i++)
                             this.AListGroup[this.yearLab].Add(i.ToString());
                     }
                 }

@@ -179,30 +179,24 @@ namespace DictGenerator
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static String toFirstUpperArray(String[] str)
+        public static List<String> getNameList(String[] str)
         {
-            String s = "";
+            List<String> list = new List<String>();
+            String firstUpper = "";
+            String Abbr = "";
+            String firstUpperAbbr = "";
             foreach (String tmp in str)
             {
-                s += ToFirstUpper(tmp);
+                firstUpper += ToFirstUpper(tmp);
+                Abbr += tmp.Substring(0, 1).ToUpper();
+                firstUpperAbbr += tmp.Substring(0, 1);
             }
-            return s;
+            list.Add(firstUpper);
+            list.Add(Abbr);
+            list.Add(firstUpper);
+            return list;
         }
 
-        /// <summary>
-        /// 获取数组各项的大写首字母
-        /// </summary>
-        /// <param name="str"></param>
-        /// <returns></returns>
-        public static String getAbbreviationArrrray(String[] str)
-        {
-            String s = "";
-            foreach(String tmp in str)
-            {
-                s += tmp.Substring(0, 1).ToUpper();
-            }
-            return s;
-        }
 
         public static String toJsonFormat(String s)
         {
