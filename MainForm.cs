@@ -151,7 +151,7 @@ namespace DictGenerator
                     {
                         int top = Convert.ToInt32(topYear.Text);
                         int bot = Convert.ToInt32(botYear.Text);
-                        if (bot < top)
+                        if (bot > top)
                         {
                             MessageBox.Show("年份输入错误！");
                             return false;
