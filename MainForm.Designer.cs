@@ -62,10 +62,10 @@
             this.nameText = new MetroFramework.Controls.MetroTextBox();
             this.username = new System.Windows.Forms.CheckBox();
             this.birthdayLab = new System.Windows.Forms.CheckBox();
-            this.botYear = new MetroFramework.Controls.MetroTextBox();
+            this.botNum = new MetroFramework.Controls.MetroTextBox();
             this.phonenumberLab = new System.Windows.Forms.CheckBox();
-            this.yearLab = new System.Windows.Forms.CheckBox();
-            this.topYear = new MetroFramework.Controls.MetroTextBox();
+            this.numLab = new System.Windows.Forms.CheckBox();
+            this.topNum = new MetroFramework.Controls.MetroTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.save = new MetroFramework.Controls.MetroButton();
             this.appendfile = new MetroFramework.Controls.MetroButton();
@@ -249,10 +249,10 @@
             this.groupBox1.Controls.Add(this.nameText);
             this.groupBox1.Controls.Add(this.username);
             this.groupBox1.Controls.Add(this.birthdayLab);
-            this.groupBox1.Controls.Add(this.botYear);
+            this.groupBox1.Controls.Add(this.botNum);
             this.groupBox1.Controls.Add(this.phonenumberLab);
-            this.groupBox1.Controls.Add(this.yearLab);
-            this.groupBox1.Controls.Add(this.topYear);
+            this.groupBox1.Controls.Add(this.numLab);
+            this.groupBox1.Controls.Add(this.topNum);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox1.Location = new System.Drawing.Point(0, 106);
             this.groupBox1.Name = "groupBox1";
@@ -554,38 +554,38 @@
             this.birthdayLab.Text = "生日";
             this.birthdayLab.UseVisualStyleBackColor = true;
             // 
-            // botYear
+            // botNum
             // 
             // 
             // 
             // 
-            this.botYear.CustomButton.Image = null;
-            this.botYear.CustomButton.Location = new System.Drawing.Point(16, 2);
-            this.botYear.CustomButton.Name = "";
-            this.botYear.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.botYear.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.botYear.CustomButton.TabIndex = 1;
-            this.botYear.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.botYear.CustomButton.UseSelectable = true;
-            this.botYear.CustomButton.Visible = false;
-            this.botYear.Lines = new string[0];
-            this.botYear.Location = new System.Drawing.Point(107, 347);
-            this.botYear.MaxLength = 4;
-            this.botYear.Name = "botYear";
-            this.botYear.PasswordChar = '\0';
-            this.botYear.PromptText = "最小";
-            this.botYear.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.botYear.SelectedText = "";
-            this.botYear.SelectionLength = 0;
-            this.botYear.SelectionStart = 0;
-            this.botYear.ShortcutsEnabled = true;
-            this.botYear.Size = new System.Drawing.Size(40, 26);
-            this.botYear.TabIndex = 2;
-            this.botYear.UseSelectable = true;
-            this.botYear.WaterMark = "最小";
-            this.botYear.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.botYear.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.botYear.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onKeyPress);
+            this.botNum.CustomButton.Image = null;
+            this.botNum.CustomButton.Location = new System.Drawing.Point(16, 2);
+            this.botNum.CustomButton.Name = "";
+            this.botNum.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.botNum.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.botNum.CustomButton.TabIndex = 1;
+            this.botNum.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.botNum.CustomButton.UseSelectable = true;
+            this.botNum.CustomButton.Visible = false;
+            this.botNum.Lines = new string[0];
+            this.botNum.Location = new System.Drawing.Point(107, 347);
+            this.botNum.MaxLength = 4;
+            this.botNum.Name = "botNum";
+            this.botNum.PasswordChar = '\0';
+            this.botNum.PromptText = "最小";
+            this.botNum.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.botNum.SelectedText = "";
+            this.botNum.SelectionLength = 0;
+            this.botNum.SelectionStart = 0;
+            this.botNum.ShortcutsEnabled = true;
+            this.botNum.Size = new System.Drawing.Size(40, 26);
+            this.botNum.TabIndex = 2;
+            this.botNum.UseSelectable = true;
+            this.botNum.WaterMark = "最小";
+            this.botNum.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.botNum.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.botNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onKeyPress);
             // 
             // phonenumberLab
             // 
@@ -598,49 +598,49 @@
             this.phonenumberLab.Text = "手机号";
             this.phonenumberLab.UseVisualStyleBackColor = true;
             // 
-            // yearLab
+            // numLab
             // 
-            this.yearLab.AutoSize = true;
-            this.yearLab.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.yearLab.Location = new System.Drawing.Point(9, 353);
-            this.yearLab.Name = "yearLab";
-            this.yearLab.Size = new System.Drawing.Size(59, 20);
-            this.yearLab.TabIndex = 0;
-            this.yearLab.Text = "年份";
-            this.yearLab.UseVisualStyleBackColor = true;
+            this.numLab.AutoSize = true;
+            this.numLab.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.numLab.Location = new System.Drawing.Point(9, 353);
+            this.numLab.Name = "numLab";
+            this.numLab.Size = new System.Drawing.Size(91, 20);
+            this.numLab.TabIndex = 0;
+            this.numLab.Text = "有序数列";
+            this.numLab.UseVisualStyleBackColor = true;
             // 
-            // topYear
-            // 
-            // 
+            // topNum
             // 
             // 
-            this.topYear.CustomButton.Image = null;
-            this.topYear.CustomButton.Location = new System.Drawing.Point(16, 2);
-            this.topYear.CustomButton.Name = "";
-            this.topYear.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.topYear.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.topYear.CustomButton.TabIndex = 1;
-            this.topYear.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.topYear.CustomButton.UseSelectable = true;
-            this.topYear.CustomButton.Visible = false;
-            this.topYear.Lines = new string[0];
-            this.topYear.Location = new System.Drawing.Point(171, 347);
-            this.topYear.MaxLength = 4;
-            this.topYear.Name = "topYear";
-            this.topYear.PasswordChar = '\0';
-            this.topYear.PromptText = "最大";
-            this.topYear.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.topYear.SelectedText = "";
-            this.topYear.SelectionLength = 0;
-            this.topYear.SelectionStart = 0;
-            this.topYear.ShortcutsEnabled = true;
-            this.topYear.Size = new System.Drawing.Size(40, 26);
-            this.topYear.TabIndex = 3;
-            this.topYear.UseSelectable = true;
-            this.topYear.WaterMark = "最大";
-            this.topYear.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.topYear.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.topYear.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onKeyPress);
+            // 
+            // 
+            this.topNum.CustomButton.Image = null;
+            this.topNum.CustomButton.Location = new System.Drawing.Point(16, 2);
+            this.topNum.CustomButton.Name = "";
+            this.topNum.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.topNum.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.topNum.CustomButton.TabIndex = 1;
+            this.topNum.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.topNum.CustomButton.UseSelectable = true;
+            this.topNum.CustomButton.Visible = false;
+            this.topNum.Lines = new string[0];
+            this.topNum.Location = new System.Drawing.Point(171, 347);
+            this.topNum.MaxLength = 4;
+            this.topNum.Name = "topNum";
+            this.topNum.PasswordChar = '\0';
+            this.topNum.PromptText = "最大";
+            this.topNum.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.topNum.SelectedText = "";
+            this.topNum.SelectionLength = 0;
+            this.topNum.SelectionStart = 0;
+            this.topNum.ShortcutsEnabled = true;
+            this.topNum.Size = new System.Drawing.Size(40, 26);
+            this.topNum.TabIndex = 3;
+            this.topNum.UseSelectable = true;
+            this.topNum.WaterMark = "最大";
+            this.topNum.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.topNum.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.topNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onKeyPress);
             // 
             // panel1
             // 
@@ -844,10 +844,10 @@
         private System.Windows.Forms.CheckBox username;
         private System.Windows.Forms.CheckBox birthdayLab;
         private System.Windows.Forms.CheckBox defineLab;
-        private MetroFramework.Controls.MetroTextBox botYear;
+        private MetroFramework.Controls.MetroTextBox botNum;
         private System.Windows.Forms.CheckBox phonenumberLab;
-        private System.Windows.Forms.CheckBox yearLab;
-        private MetroFramework.Controls.MetroTextBox topYear;
+        private System.Windows.Forms.CheckBox numLab;
+        private MetroFramework.Controls.MetroTextBox topNum;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox defineText;
         private System.Windows.Forms.Button generateDict;

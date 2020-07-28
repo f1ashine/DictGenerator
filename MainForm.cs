@@ -64,7 +64,7 @@ namespace DictGenerator
             createSymbolTree();
             this.AListGroup.Add(titleLab, new List<String>());
             this.AListGroup.Add(siteLab, new List<String>());
-            this.AListGroup.Add(yearLab, new List<String>());
+            this.AListGroup.Add(numLab, new List<String>());
             this.AListGroup.Add(phonenumberLab, new List<String>());
             this.AListGroup.Add(nameLab, new List<String>());
             this.AListGroup.Add(birthdayLab, new List<String>());
@@ -138,31 +138,38 @@ namespace DictGenerator
                     this.AListGroup[this.defineLab].Add(word);
                 }
             }
-            if (yearLab.CheckState == CheckState.Checked)
+            if (numLab.CheckState == CheckState.Checked)
             {
-                if (!String.IsNullOrEmpty(botYear.Text) && !String.IsNullOrEmpty(topYear.Text))
+                if (!String.IsNullOrEmpty(botNum.Text) && !String.IsNullOrEmpty(topNum.Text))
                 {
-                    if (botYear.Text.Length != 4 || topYear.Text.Length != 4)
+                    if (botNum.Text.Length != topNum.Text.Length)
                     {
-                        MessageBox.Show("输入的年份格式错误！");
+                        MessageBox.Show("输入的数值位数不一致！");
                         return false;
                     }
                     else
                     {
-                        int top = Convert.ToInt32(topYear.Text);
-                        int bot = Convert.ToInt32(botYear.Text);
+                        int len = botNum.Text.Length;
+                        int top = Convert.ToInt32(topNum.Text);
+                        int bot = Convert.ToInt32(botNum.Text);
                         if (bot > top)
                         {
-                            MessageBox.Show("年份输入错误！");
+                            MessageBox.Show("数值输入错误！");
                             return false;
                         }
-                        for (int i = bot; i <= top; i++)
-                            this.AListGroup[this.yearLab].Add(i.ToString());
+                        for (int i = bot; i <= top; i++) {
+                            string str = i.ToString();
+                            if(str.Length < len)
+                            {
+                                str = new String('0', len - str.Length) + str;
+                            }
+                            this.AListGroup[this.numLab].Add(str);
+                        }
                     }
                 }
                 else
                 {
-                    MessageBox.Show("选中年份选项后，需要输入年份的间隔时间，若只需要单独一个年份，请输入到自定义内容中");
+                    MessageBox.Show("选中有序数列选项后，需要输入有序数列的最小值与最大值，若只需要单独一个数值，请输入到自定义内容中！");
                     return false;
                 }
             }
